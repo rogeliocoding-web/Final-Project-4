@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Project4</title>
-    
-</head>
-<body>
+  </head>
+  <body>
     <section id="landing">
-    <nav>
-      <div class="row nav__row">
-        <div class="nav__logo">
-            <img class="nav__logo--img" src="assets 3/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO">
+      <nav>
+        <div class="row nav__row">
+          <div class="nav__logo">
+            <img
+              class="nav__logo--img"
+              src="assets 3/logo.2c489fc453a1783cbadacf914efa3df6.svg"
+              alt="LOGO"
+            />
             <div class="nav__logo--title">Treact</div>
-
+          </div>
+          <div class="nav__links">
+            <a href="#" class="nav__link">About</a>
+            <a href="#" class="nav__link">Blog</a>
+            <a href="#" class="nav__link">Pricing</a>
+            <a href="#" class="nav__link">Contact Us</a>
+            <a href="#" class="nav__link login">Login</a>
+            <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+          </div>
+          <button class="btn__menu" onclick="openMenu()"></button>
         </div>
-        <div class="nav__links">
-          <a href="#" class="nav__link">About</a>
-          <a href="#" class="nav__link">Blog</a>
-          <a href="#" class="nav__link">Pricing</a>
-          <a href="#" class="nav__link">Contact Us</a>
-          <a href="#" class="nav__link login">Login</a>
-          <a href="#" class="nav__link nav__link--primary">Sign Up</a>
-        </div>
-        <button class="btn__menu" onclick="openMenu()"></button>
-
-      </div>
-    </nav>
-    <div class="menu">
-      <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-        
-      </button>
+      </nav>
+      <div class="menu">
+        <button
+          class="btn__menu btn__menu--close"
+          onclick="closeMenu()"
+        ></button>
         <div class="menu__links">
           <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
           <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
-          <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
-          <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+          <a href="#pricing" class="menu__link" onclick="closeMenu()"
+            >Pricing</a
+          >
+          <a href="#contact__us" class="menu__link" onclick="closeMenu()"
+            >Contact Us</a
+          >
           <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
-          <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
+          <a
+            href="#signup"
+            class="menu__link menu__link--primary"
+            onclick="closeMenu()"
+            >Sign up</a
+          >
         </div>
-    </div>
-    <header>
-      <div class="container"></div>
-      <div class="row">
-        <div class="header__description">
-          <h1>
-            Beautiful React Templates
-            <span class="purple">for you</span>
-          </h1>
-          <p class="header__description--para">
-            Our templates are easey to setup, understand, and customize. 
-            Fully modular components with a variety of pages components
-          </p>
-          <div class="header__email">
-            <input type="text" class="header__email--input" placeholder="Your E-mail Address">
-            
-            </div>
+      </div>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="header__description">
+              <h1>
+                Beautiful React Templates
+                <span class="purple">for you</span>
+              </h1>
+              <p class="header__description--para">
+                Our templates are easey to setup, understand, and customize.
+                Fully modular components with a variety of pages components
+              </p>
+              <div class="header__email">
+                <input
+                  type="text"
+                  class="header__email--input"
+                  placeholder="Your E-mail 
+                  Address">
+                  <div data-lastpass-icon-root="" style="position: relative !important; height: 0px !important; width: 0px !important; display: initial !important; float: left !important;"><template shadowrootmode="closed"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" data-lastpass-icon="true" data-testid="infield-icon" style="position: absolute; cursor: pointer; height: 22px; max-height: 22px; width: 22px; max-width: 22px; top: -40.4902px; left: 197.004px; z-index: 1; color: rgb(186, 192, 202);"><rect x="0.680176" y="0.763062" width="22.6392" height="22.4737" rx="4" fill="currentColor"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M19.7935 7.9516C19.7935 7.64414 20.0427 7.3949 20.3502 7.3949C20.6576 7.3949 20.9069 7.64414 20.9069 7.9516V16.0487C20.9069 16.3562 20.6576 16.6054 20.3502 16.6054C20.0427 16.6054 19.7935 16.3562 19.7935 16.0487V7.9516Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M4.76288 13.6577C5.68525 13.6577 6.43298 12.9154 6.43298 11.9998C6.43298 11.0842 5.68525 10.3419 4.76288 10.3419C3.8405 10.3419 3.09277 11.0842 3.09277 11.9998C3.09277 12.9154 3.8405 13.6577 4.76288 13.6577Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M10.3298 13.6577C11.2521 13.6577 11.9999 12.9154 11.9999 11.9998C11.9999 11.0842 11.2521 10.3419 10.3298 10.3419C9.4074 10.3419 8.65967 11.0842 8.65967 11.9998C8.65967 12.9154 9.4074 13.6577 10.3298 13.6577Z" fill="white"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.8964 13.6577C16.8188 13.6577 17.5665 12.9154 17.5665 11.9998C17.5665 11.0842 16.8188 10.3419 15.8964 10.3419C14.974 10.3419 14.2263 11.0842 14.2263 11.9998C14.2263 12.9154 14.974 13.6577 15.8964 13.6577Z" fill="white"></path></svg></template>
+                  </div>
 
-            <button class="header__email--btn">Get Started</button>
+                  <button class="header__email--btn">Get Started</button>
+              </div>
+              <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+              <img
+                src="./assets 3/customers-logo-strip.680ac7c2e8ae28161d2c.png"
+                class="header__customers"
+              />
+              <figure class="header__img--wrapper">
+              <img
+                src="./assets 3/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg"
+                class="header__img"
+              />
+            </div>
             
-          </div>
-          <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
-          <img src="./assets 3/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers">
-        </div>
-        <figure class="header__img--wrapper">
-              <img src="./assets 3/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" class="header__img">
             </figure>
           </div>
-      </div> 
-    </header>
-
-  </section>
-</body>
+        </div>
+      </header>
+    </section>
+  </body>
 </html>
