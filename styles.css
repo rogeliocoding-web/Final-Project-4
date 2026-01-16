@@ -365,6 +365,11 @@ img {
 .quality__description, .quality__img--wrapper {
     width: 50%;
 }
+.quality__img--wrapper {
+  position: relative;
+}
+
+
 .quality__description {
     max-width: 576px;
     margin-right: 64px;
@@ -372,6 +377,10 @@ img {
 
 .quality__img {
     z-index: 1;
+}
+
+img {
+    width: 100%;
 }
 
 #quality .btn {
@@ -392,7 +401,27 @@ ease;
     cursor: pointer;
 }
 
+#quality .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .btn:hover {
     background-color: rgba(80, 17, 204);
+}
+
+.quality__grid {
+    transform: translateX(50%) translateY(50%) scaleX(1) scaleY(1);
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    fill: rgb(100, 21, 255);
+    --tw-text-opacity: 1;
+    color: rgba(100, 21, 255, var(--tw-text-opacity));
+    z-index: 0;
+    display: block;
 }
 
