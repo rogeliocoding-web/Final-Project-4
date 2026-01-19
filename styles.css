@@ -17,15 +17,15 @@ body {
 
 .row {
     width: 100%;
-    max-width: 1280px;
+    max-width: 1200px;
     margin: 0 auto;
     display: flex;
 }
 
 h1 {
-    font-size: 48px;
+    font-size: 64px;
     color: #1a202c;
-    line-height: 1.25;
+    line-height: 1.2;
 }
 
 .row__narrow {
@@ -43,7 +43,7 @@ h1 {
 }
 
 section {
-    padding: 0 32px;
+    padding: 0 20px;
 }
 
 main {
@@ -212,7 +212,7 @@ header {
 
 
 .header__description {
-    width: 40%;
+    width: 50%;
 }
 
 .header__description--para {
@@ -226,7 +226,7 @@ p {
 
     .header__img {
     width: 100%;
-    max-width: 768px;
+    max-width: 640px;
 }
 
 .header__customers--title {
@@ -532,6 +532,7 @@ user agent stylesheet
     margin-left: 24px;
     max-width: 320px;
 }
+
 
 .step__para {
     font-size: 14px;
