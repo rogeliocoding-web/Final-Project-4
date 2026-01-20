@@ -643,6 +643,9 @@ path[Attributes Style] {
     d: path("M 17 5 H 9.5 a 3.5 3.5 0 0 0 0 7 h 5 a 3.5 3.5 0 0 1 0 7 H 6");
 }
 
+.value:nth-child(2) .value__img--wrapper {
+    background-color: #feb2b2;
+}
 :not(svg) {
     transform-origin: 0px 0px;
 }
@@ -669,9 +672,7 @@ path[Attributes Style] {
     align-items: center;
 }
 
-.value:nth-child(2) .value__img--wrapper {
-    background-color: #feb2b2;
-}
+
 .value__img--wrapper {
     border-radius: 50%;
     display: flex;
@@ -720,3 +721,5 @@ ease;
 .values__description, .values__img {
     width: 50%;
 }
+
+
