@@ -1068,3 +1068,19 @@ img {
     display: flex;
     align-items: center;
 }
+
+.testimonial__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    background: #edf2f7;
+    border-radius: 50%;
+    margin: 0 12px;
+    transition: all 300ms 
+ease;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
