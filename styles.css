@@ -239,10 +239,8 @@ p {
 
 .header__customers {
     margin-top: 16px;
-    
     opacity: 0.5;
 }
-
 
 
 .header__email {
@@ -931,7 +929,7 @@ section {
 
 
 img {
-    width: 50%;
+    width: 100%;
 }
 
 .testimonials__description {
@@ -1036,6 +1034,10 @@ img {
 .testimonial__profile {
     display: flex;
     align-items: center;
+}
+
+.testimonial__img--figure {
+    width: 50%;
 }
 
 .testimonial__img {
@@ -1276,4 +1278,17 @@ ease;
 
 :not(svg) {
     transform-origin: 0px 0px;
+}
+
+.footer__social--link svg {
+    width: 16px;
+    height: 16px;
+    background: transparent
+}
+
+.button__menu--svg {
+    width: 24px;
+    height: 24px;
+    color: #243e63;
+    background: transparent;
 }
