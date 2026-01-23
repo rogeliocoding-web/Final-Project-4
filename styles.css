@@ -23,7 +23,7 @@ body {
 }
 
 h1 {
-    font-size: 64px;
+    font-size: 36px;
     color: #1a202c;
     line-height: 1.2;
 }
@@ -212,7 +212,7 @@ header {
 
 
 .header__description {
-    width: 50%;
+    width: 40%;
 }
 
 .header__description--para {
@@ -239,13 +239,10 @@ p {
 
 .header__customers {
     margin-top: 16px;
-    padding-right: 128px;
+    
     opacity: 0.5;
 }
 
-img {
-    width: 100%;
-}
 
 
 .header__email {
