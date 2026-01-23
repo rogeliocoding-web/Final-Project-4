@@ -76,6 +76,8 @@ nav {
     background: transparent;
     border: none;
     transition: all 300ms ease;
+    display: none;
+    z-index: 101;
 }
 
 .nav__logo--img {
@@ -185,12 +187,8 @@ ease;
 
 /* Hide mobile menu button on desktop */
 @media (min-width: 768px) {
-    .btn__menu {
-        
-    }
-    .menu {
-        display: none !important;
-    }
+    .btn__menu { display: none; }
+    .menu { display: none !important; }
 }
 
 .container {
@@ -1303,6 +1301,10 @@ ease;
     .nav__links { display: none; }
     .btn__menu { display: inline-block; }
     .nav__row { align-items: center; }
+}
+
+@media (min-width: 768px) {
+    .nav__links { display: flex; }
 }
 
 /* Header stack */
