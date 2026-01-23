@@ -1286,9 +1286,8 @@ ease;
     background: transparent
 }
 
-.button__menu--svg {
+.btn__menu--svg {
     width: 24px;
     height: 24px;
-    color: #243e63;
-    background: transparent;
+    stroke: #243e63;
 }
