@@ -71,9 +71,8 @@ nav {
     padding-bottom: 4px;
 }
 
-
 .btn__menu {
-    display: none;
+    
     background: transparent;
     border: none;
     transition: all 300ms ease;
@@ -187,7 +186,7 @@ ease;
 /* Hide mobile menu button on desktop */
 @media (min-width: 768px) {
     .btn__menu {
-        display: none !important;
+        
     }
     .menu {
         display: none !important;
@@ -1290,4 +1289,11 @@ ease;
     width: 24px;
     height: 24px;
     stroke: #243e63;
+}
+
+@media (max-width: 768px) {
+   .row {
+       flex-direction: column;
+    
+   }
 }
