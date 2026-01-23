@@ -1171,6 +1171,13 @@ footer {
     unicode-bidi: isolate;
 }
 
+footer {
+    padding: 96px 32px;
+    background-color: rgb(100, 21, 255);
+    margin-bottom: -32px;
+    position: relative;
+    overflow: hidden;
+}
 .footer__columns {
     margin-top: -48px;
     display: flex;
@@ -1186,4 +1193,29 @@ footer {
     flex: 1;
 }
 
+.footer__column {
+  display: flex;
+  flex-direction: column;
+}
 
+
+
+.footer__column--title {
+    font-weight: 700;
+    color: #f7fafc;
+    line-height: 1.5;
+}
+
+.footer__column--link:nth-child(2) {
+    margin-top: 24px;
+}
+
+.footer__column--link {
+    color: #f7fafc;
+    font-size: 14px;
+    margin-top: 12px;
+    line-height: 1.5;
+    font-weight: 500;
+    position: relative;
+    cursor: pointer;
+}
